@@ -1,0 +1,58 @@
+:root {
+    --primaryBlue: #02489d;
+}
+
+@media (min-width: 1025px) {
+    .h-custom {
+        height: 100vh !important;
+    }
+}
+
+.card-registration select {
+    font-size: 16px;
+    line-height: 2.15;
+    padding-left: .75em;
+    padding-right: .75em;
+}
+
+.gradient-custom-2 {
+    background: linear-gradient(to right, rgba(161, 196, 253, 1), rgba(194, 233, 251, 1))
+}
+
+.bg-indigo {
+    background-color: var(--primaryBlue);
+}
+
+.btn-submit {
+    color: var(--primaryBlue);
+    background-color: white;
+    width: 100%;
+    font-size: 1.25rem;
+    padding: 12px .75em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.btn-submit:hover {
+    color: white !important;
+    border: 1px solid white;
+    font-weight: bold;
+    background-color: var(--primaryBlue);
+}
+
+@media (min-width: 992px) {
+    .card-registration .bg-indigo {
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+}
+
+@media (max-width: 991px) {
+    .card-registration .bg-indigo {
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+}

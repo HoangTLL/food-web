@@ -1,0 +1,176 @@
+:root {
+    --primaryBlue: rgb(2, 72, 157);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    background-color: #fff;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+#btnLike {
+    background-color: var(--primaryBlue);
+    color: #fff;
+    border: none;
+    transition: 0.3s;
+}
+
+#btnLike:hover {
+    background-color: rgb(3, 45, 99);
+    color: #fff;
+}
+
+.card {
+    border-radius: 15px;
+    border: 2px solid rgb(208, 204, 204);
+    box-shadow: #555 5px 5px 20px 5px;
+}
+
+.card img {
+    border-radius: 15px 15px 0 0;
+}
+
+/* back to top */
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 3%;
+    right: 2%;
+    z-index: 10;
+
+    border: 2px solid #555;
+    color: #555;
+    background-color: #fff;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 100%;
+
+    transition: all 0.3s;
+}
+
+#myBtn:hover {
+    background-color: var(--primaryBlue);
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+/* background color primary */
+.gradient-custom {
+    background-color: var(--primaryBlue) !important;
+}
+
+/* header */
+header #navbarColor01 a {
+    transition: 0.3s all ease-in-out;
+}
+
+header #navbarColor01 a:hover {
+    transform: scale(1.15);
+}
+
+header .navbar {
+    background-color: var(--primaryBlue) !important;
+}
+
+.navbar a {
+    color: white !important;
+}
+
+.nav1 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 60px;
+    width: 100%;
+}
+
+
+
+/* CART */
+.cart__overlay {
+    position: fixed;
+    z-index: 20;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.25s ease-in;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.cart.is-hidden .cart__overlay {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.cart__contents {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    bottom: 0;
+    left: 100%;
+    width: 40%;
+    height: 100%;
+    background-color: #fff;
+    transition: all 0.25s ease-in-out;
+    transform: translate(-100%, 0);
+}
+
+.cart.is-hidden .cart__contents {
+    transform: translate(0, 0);
+}
+
+.cart__products {
+    overflow: auto;
+    padding: 28px;
+    height: 50%;
+}
+
+.cart__totals {
+    padding: 28px;
+    height: 50%;
+    background-color: #f7f7f7;
+}
+
+.form__footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* cart count icon */
+.nav-link .badge {
+    position: relative;
+    padding: 3.2px 5px;
+    top: -14px;
+    left: -12px;
+    z-index: 1;
+}

@@ -1,0 +1,40 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 12, 2024, 10:12:15 PM
+    Author     : Tan Phat
+*/
+:root {
+    --primaryBlue: rgb(2, 72, 157);
+}
+
+/* header */
+header #navbarColor01 a {
+    transition: 0.3s all ease-in-out;
+}
+
+header #navbarColor01 a:hover {
+    transform: scale(1.15);
+}
+
+header .navbar {
+    background-color: var(--primaryBlue) !important;
+}
+
+.navbar a {
+    color: white !important;
+}
+
+.nav1 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 60px;
+    width: 100%;
+}
+
+
+
